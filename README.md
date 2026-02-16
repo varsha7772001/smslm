@@ -1,22 +1,8 @@
-Android LLM Module (llama.cpp Integration)
+**Android LLM Module (llama.cpp Integration)**
 
 This Android library integrates llama.cpp for on-device LLM inference.
 
-It supports:
-
-Native C++ (NDK)
-
-Vulkan (optional)
-
-ARM64 optimization
-
-Latest llama.cpp updates via git submodule
-
-Add via Git (JitPack)
-
-This is the recommended way to include this library in your Android project.
-
-1️⃣ Add JitPack Repository
+1️⃣ **Add JitPack Repository**
 
 In your settings.gradle:
 
@@ -29,7 +15,7 @@ dependencyResolutionManagement {
     }
 }
 
-2️⃣ Add Dependency
+2️⃣ **Add Dependency**
 
 In your app/build.gradle:
 
@@ -37,7 +23,7 @@ implementation 'com.github.varsha7772001:smslm:main'
 
 with your actual repo details.
 
-🧠 Clone Latest llama.cpp
+🧠 **Clone Latest llama.cpp**
 
 This project uses the official llama.cpp repository:
 
@@ -52,11 +38,11 @@ git clone https://github.com/ggerganov/llama.cpp.git
 cd llama.cpp
 git pull origin master
 
-🔥 Using Git Submodule (Recommended)
+Using Git Submodule (Recommended)
 
 To always track latest llama.cpp inside this project:
 
-From project root:
+**From project root:**
 
 git submodule add https://github.com/ggerganov/llama.cpp.git cpp/llama.cpp
 git submodule update --init --recursive
@@ -68,4 +54,4 @@ Add llama.cpp inside cpp/llama.cpp
 
 Keep it version controlled
 
-Allow easy updates
+
